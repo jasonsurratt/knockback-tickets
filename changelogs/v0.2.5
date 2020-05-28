@@ -1,0 +1,26 @@
+# Changelog for v0.2.5
+2020-05-28
+
+## Bug Fixes:
+
+* When looking from the stair room to the great hall, performance would drop on some machines. This was due to lighting. I've reduced the quality of far away lighting to fix this.
+* After updating the enemy AI, many enemies stopped attacking, this should be fixed.
+* Baddies would sometimes pause or stop moving for a while and then walk again, this should be fixed.
+* Opening the menu in single player now pauses the game.
+* While playing single player there is no longer a timeout between waves.
+* When a user goes into the debug log, give a message telling them how to get out.
+* Network errors were only being reported in the log, now you should get a prominent message and a button to exit on error. This isn't very elegant but it conveys the information you need.
+* The player should no longer look like it is floating on awkward terrain.
+
+## Enhancements:
+
+* I've added a new forest level to play around in. This is snagged straight from a demo scene and simply has a survive to win victory condition.
+* New sound effects are added for: engineer, giant, ghoul, scavenger and zombie. Great work StormPlooper!
+* The weapon select UI now lets you drag and drop weapons into position rather than assign them at runtime.
+* Modified one of the dummies to spin around w/ a sword and shield.
+* Fixed the graveyard spawning so zombies/ghouls now spawn above the tree and tumble down when damage is dealt to a gravestone.
+* Enable the reticle by default.
+
+## Known Significant Issues:
+
+* #19 Baddies do not use throw attacks when expected.
